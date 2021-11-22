@@ -1,0 +1,17 @@
+CREATE TABLE food (
+  idfood INT AUTO_INCREMENT PRIMARY KEY,
+  namafood VARCHAR(30) NOT NULL,
+  jenis VARCHAR(20) NOT NULL,
+  harga INT(20) NOT NULL, 
+  foto VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE pesanan (
+  idpesan INT AUTO_INCREMENT PRIMARY KEY,
+  nmpembeli VARCHAR(30) NOT NULL,
+  alamat VARCHAR(50) NOT NULL,
+  nmpesanan VARCHAR(30) NOT NULL,
+  jumlah INT(2) NOT NULL,
+  total INT(20) NOT NULL,
+  status VARCHAR(20) NOT NULL 
+);

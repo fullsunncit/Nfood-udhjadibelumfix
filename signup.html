@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+  <link rel="stylesheet" href="css1.css" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <div class="col-sm-8">
+        <div class="forms-container">  
+          <div class="signin-signup">
+            <form action="login.php" class="sign-in-form" name="form" method = "POST">
+              <h2 class="title">Sign Up</h2>
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input name="username" type="text" placeholder="Username" />
+              </div>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input id="sandi" name="password" type="text" placeholder="Password" />
+                <span class="eye" onclick="eyePassword()">
+                  <i id="hide1" class="fas fa-eye"></i>
+                  <i id="hide2" class="fas fa-eye-slash"></i>
+                </span>
+              </div>
+              <p style="color:blue">Sudah punya akun?</p>
+              <div class="row">
+                <div class="col-sm-7">
+                  <button type="submit" class="btn solid">SUBMIT</button>
+                </div>
+                <div class="col-sm-5">
+                  <button class="btn solid">
+                    <a href="index.php">SIGN IN</a>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <script src="script.js"></script>   
+</body>
+
+</html>
